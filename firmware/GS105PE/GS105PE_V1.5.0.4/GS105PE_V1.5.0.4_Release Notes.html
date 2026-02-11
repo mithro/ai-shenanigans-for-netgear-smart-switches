@@ -1,0 +1,49 @@
+<p><strong>New Features and Enhancements:</strong></p>
+
+<ul>
+	<li>Implemented new and more secured encryption algorithm to work with new version of Plus Utility (V2.4.3 or higher).</li>
+</ul>
+
+<p><strong>Bug Fixes:</strong></p>
+
+<ul>
+	<li>Fixed the interoperability issue when trying to power GS105PE with certain devices like HP PoE+ injector J9867A and PoE+ PSE FORTINET FORTISWITCH 124D. The symptom is that GS105PE would initially show it is being powered by 802.3at (right LED of port 5 shows green color). Then, it would change to 802.3af power (right LED of port 5 turns to yellow color) a few seconds later.</li>
+</ul>
+
+<p><span style="color:#ff0000;"><strong>WARNING:</strong></span></p>
+
+<ol>
+	<li><strong>Once GS105PE FW is upgraded to V1.5.0.4, it is imperative to upgrade the bootloader also.&nbsp;&nbsp; Please login to switch using web GUI. &nbsp;V1.5.0.4 FW will prompt you automatically for the required bootloader version.&nbsp; Please make sure you pick the right version.&nbsp; Incorrect version will cause the switch to become inoperable.&nbsp;</strong></li>
+	<li value="2"><strong>Once you have upgraded both FW and bootloader, please perform a factory default for the fix to take effect.</strong></li>
+	<li value="3"><strong>After GS105PE is upgraded to FW version V1.5.0.4 or higher, it will not work with Plus Utility version prior to V2.4.3.&nbsp; Please download the latest Plus Utility from <a href="http://www.netgear.com/support/product/PCU">http://www.netgear.com/support/product/PCU</a></strong></li>
+</ol>
+
+<p><strong>Upgrade Procedure:</strong></p>
+
+<ol>
+	<li>Download the new firmware 1.5.0.4 from NETGEAR product support Website and store it in local PC, and remember its location in the PC&rsquo;s file system. Unzip it to get the switch firmware image &ldquo;<strong>GS105PE_V1.5.0.4.bin</strong>&rdquo;.
+
+	<p><strong>Download Link:</strong>&nbsp;<u><a href="http://www.downloads.netgear.com/files/GDC/GS105PE/GS105PE_V1.5.0.4.zip" target="_blank">http://www.downloads.netgear.com/files/GDC/GS105PE/GS105PE_V1.5.0.4.zip</a></u></p>
+	</li>
+	<li>There are two methods to upgrade the new firmware from PC to the switch.
+	<ul>
+		<li><strong>HTTP</strong></li>
+		<li><strong>ProSAFE Plus Utility</strong></li>
+	</ul>
+
+	<p>Below are the steps to upgrade the firmware via HTTP, which is the most convenient method. For the other method, please check the IG and SW User Manual for details.</p>
+	</li>
+	<li>To use <strong>HTTP</strong> method, go to GUI page &ldquo;Maintenance &gt; Firmware Upgrade&quot;.</li>
+	<li>Click <strong>Enter Loader Mode</strong> button and it will go to Firmware Upgrade page.</li>
+	<li>Click the <strong>Browse</strong> button and locate and select the new firmware image file &ldquo;GS105PE_V1.5.0.4.bin&rdquo;.</li>
+	<li>Click the <strong>Apply</strong> button.</li>
+	<li>When the upgrade is complete, your switch restarts. The upgrade process typically takes about three minutes.</li>
+	<li>Once FW upgrading completes, please login to switch by web GUI to upgrade boot loader.</li>
+	<li>When login to the switch, it will go to Bootloader Upgrade page.</li>
+	<li>It will show which boot loader version you should use and click <strong>Browse</strong> button and locate and select the correct boot loader version and click APPLY.</li>
+	<li>Once boot loader upgrading is complete, the switch will go back to login page.</li>
+</ol>
+
+<p><span style="color:#ff0000;"><strong>WARNING:</strong></span></p>
+
+<p><strong>To avoid the risk of corrupting the firmware, do not interrupt the upgrade. For example, do not turn off the switch or disconnect it.</strong></p>
